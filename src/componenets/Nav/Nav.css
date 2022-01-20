@@ -1,0 +1,43 @@
+.nav-container{
+    display:flex;
+   
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-left{
+    display:flex;
+    padding: 12px;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    
+
+}
+
+
+.nav-left img{
+    height: 55px;
+    margin: 0 12px;
+
+}
+.flash-logo-text{
+    margin-top:10px;
+    font-family: cursive;
+    font-style: italic;
+
+}
+
+.nav-right{
+    margin-right: 40px;
+
+
+}
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    
+}
