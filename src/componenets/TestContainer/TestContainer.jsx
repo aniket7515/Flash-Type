@@ -7,16 +7,27 @@ const TestContainer = ({
     characters,
     wpm
 }) => {
+    const timeRemaining=0;
+
+
   return (
       <div className="test-container">
-          <div className="typing-challenge-cont">
-              <TypingChallengeContainer words={words} characters={characters} wpm={wpm}/>
-          </div>
-          {/* <div className="try-again-cont">
+          {
+              timeRemaining>0?(
+                <div className="typing-challenge-cont">
+                <TypingChallengeContainer words={words} characters={characters} wpm={wpm}/>
+            </div>
+              ):(
+                <div className="try-again-cont">
 
-              <TryAgain words={words} characters={characters} wpm={wpm} /> 
-              
-          </div> */}
+                <TryAgain words={words} characters={characters} wpm={wpm} /> 
+                
+            </div>
+
+              )
+          }
+          
+        
 
       </div>
 
